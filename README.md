@@ -2,6 +2,7 @@
 Principle component analysis of dihedral angles.
 
 # Compilation
+Dependencies: [`Eigen`](https://gitlab.com/libeigen/eigen) and [`fmt`](https://github.com/fmtlib/fmt)
 ```
 g++ dPCA.cpp -lfmt -I/usr/include/eigen3 -O2 -o dPCA
 ```
