@@ -217,7 +217,7 @@ void DihedralData::writeProjection(const dPCAResult& result, const string& filen
     ofs << "# Projections:\n";
     ofs << "# ";
     for (size_t i = 0; i < num_components; ++i) {
-        ofs << fmt::format("PC{} ", num_components - i);
+        ofs << fmt::format("PC{} ", i + 1);
     }
     ofs << "\n";
     for (size_t j = 0; j < M; ++j) {
