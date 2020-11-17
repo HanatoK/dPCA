@@ -237,8 +237,8 @@ void DihedralData::writeProjection(const dPCAResult& result, const string& filen
 int main(int argc, char* argv[]) {
     if (argc < 3) return 1;
     DihedralData x(argv[1]);
-    x.writeRawToFile(string(argv[2]) + ".transformed");
+    x.writeRawToFile(string(argv[2]) + "_transformed.dat");
     DihedralData::dPCAResult result = x.PCA();
-    x.writeProjection(result, string(argv[2]) + ".projected");
+    x.writeProjection(result, string(argv[2]) + "_projected.dat");
     return 0;
 }
